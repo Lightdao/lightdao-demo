@@ -1,5 +1,5 @@
 import Card from "components/card";
-import MasterCard from "components/card/MasterCard";
+import MasterCard from "components/card/Mastercard";
 import Transaction from "components/dataDisplay/Transaction";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
