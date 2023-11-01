@@ -14,7 +14,7 @@ const Alerts = () => {
       <p className="mt-4 text-center text-sm font-normal text-navy-700 dark:text-white xl:mt-8 xl:text-lg">
         Maybe it’s best you start back at our home page...
         <a
-          href="/admin/dashboards/default"
+          href="/"
           className="font-bold text-brand-500 hover:text-brand-500 dark:text-white dark:hover:text-white"
         >
           {' '}

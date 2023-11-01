@@ -24,12 +24,12 @@ const Banner = () => {
       {/* profile info */}
       <div className="mt-[85px] flex flex-col items-center">
         <h1 className="mt-2 text-[55px] font-bold text-navy-700 dark:text-white">
-          Abstractus®
+          Lion of Judah
         </h1>
         <p className="mt-[10px] flex w-full items-center justify-center text-lg font-medium text-gray-600">
           Created by{' '}
           <p className="ml-1 text-base font-bold text-[#3965FF] dark:text-white">
-            simmmple.web{' '}
+            Patrick Bezalel{' '}
           </p>
           <p className="ml-1 text-[#3965FF]">
             <MdVerified />

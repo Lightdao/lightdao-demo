@@ -1,5 +1,6 @@
 'use client';
-import Banner from 'components/admin/nfts/marketplace/Banner';
+import Banner from 'components/nfts/marketplace/Banner';
+import NFt1 from '/public/img/nfts/Nft1.png';
 import NFt2 from '/public/img/nfts/Nft2.png';
 import NFt4 from '/public/img/nfts/Nft4.png';
 import NFt3 from '/public/img/nfts/Nft3.png';
@@ -10,8 +11,8 @@ import avatar2 from '/public/img/avatars/avatar2.png';
 import avatar3 from '/public/img/avatars/avatar3.png';
 
 import tableDataTopCreators from 'variables/nfts/marketplace/tableDataTopCreators';
-import HistoryItem from 'components/admin/nfts/marketplace/HistoryItem';
-import TopCreatorTable from 'components/admin/nfts/marketplace/TableTopCreators';
+import HistoryItem from 'components/nfts/marketplace/HistoryItem';
+import TopCreatorTable from 'components/nfts/marketplace/TableTopCreators';
 import NftCard from 'components/card/NftCard';
 
 const Marketplace = () => {
@@ -66,24 +67,24 @@ const Marketplace = () => {
         <div className="z-20 grid grid-cols-1 gap-5 md:grid-cols-3">
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="Abstract Colors"
-            author="Esthera Jackson"
+            title="Light in the dark"
+            author="LightDAO Project"
             price="0.91"
-            image={NFt3}
+            image={NFt1}
           />
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="ETH AI Brain"
+            title="Prince of peace"
             author="Nick Wilson"
             price="0.7"
             image={NFt2}
           />
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="Mesh Gradients"
-            author="Will Smith"
+            title="Final battle"
+            author="Patrick"
             price="2.91"
-            image={NFt4}
+            image={NFt3}
           />
         </div>
 
@@ -98,22 +99,22 @@ const Marketplace = () => {
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="Abstract Colors"
-            author="Esthera Jackson"
+            title="In the ashes"
+            author="TearFund"
             price="0.91"
             image={NFt4}
           />
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="ETH AI Brain"
-            author="Nick Wilson"
+            title="Leading the way"
+            author="Mark Benjamin"
             price="0.7"
             image={NFt5}
           />
           <NftCard
             bidders={[avatar1, avatar2, avatar3]}
-            title="Mesh Gradients"
-            author="Will Smith"
+            title="Lion of Judah"
+            author="Patrick"
             price="2.91"
             image={NFt6}
           />

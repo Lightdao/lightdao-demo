@@ -5,7 +5,7 @@ export interface IRoute {
   name?: string;
   layout?: string;
   exact?: boolean;
-  component?: ComponentType | (() => JSX.Element);
+  component?: ComponentType | (() => JSX.Element) | JSX.Element;
   icon?: ComponentType | string | Element | JSX.Element;
   secondary?: boolean;
   collapse?: boolean;

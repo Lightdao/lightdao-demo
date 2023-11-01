@@ -1,5 +1,5 @@
 import { IoHeart, IoHeartOutline } from 'react-icons/io5';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Card from 'components/card';
 import Image from 'next/image';
 
@@ -11,22 +11,27 @@ const NftCard = (props: {
   download?: string;
   price: string | number;
   extra?: string;
+  isFavorite?: boolean;
 }) => {
-  const { title, author, price, image, bidders, extra } = props;
-  const [heart, setHeart] = useState(true);
+  const { title, author, price, image, bidders, extra, isFavorite = false } = props;
+  const [favorite, setFavorite] = useState(isFavorite);
+
+  useEffect(() => {
+    if (isFavorite !== undefined) {
+      setFavorite(isFavorite);
+    }
+  }, [isFavorite]);
+
+  const toggleFavorite = () => {
+    setFavorite((prev) => !prev);
+  };
+
   return (
     <Card
       extra={`flex flex-col w-full h-full !p-4 3xl:p-![18px] bg-white ${extra}`}
     >
       <div className="h-full w-full">
         <div className="relative w-full">
-          {/* <Image 
-            width="2"
-            height="20"
-            src={image}
-            className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
-            alt=""
-          /> */}
           <Image
             width="2"
             height="20"
@@ -35,14 +40,14 @@ const NftCard = (props: {
             alt=""
           />
           <button
-            onClick={() => setHeart(!heart)}
+            onClick={toggleFavorite}
             className="absolute right-3 top-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
           >
             <div className="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50 dark:text-navy-900">
-              {heart ? (
-                <IoHeartOutline />
-              ) : (
+              {favorite ? (
                 <IoHeart className="text-brand-500" />
+              ) : (
+                <IoHeartOutline />
               )}
             </div>
           </button>
@@ -52,7 +57,8 @@ const NftCard = (props: {
           <div className="mb-2">
             <p className="text-lg font-bold text-navy-700 dark:text-white">
               {' '}
-              {title}{' '}
+              <a href="/nfts/collection">{title}</a>
+              {' '}
             </p>
             <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
               By {author}{' '}

@@ -1,11 +1,11 @@
 'use client';
 // components
-import Auction from 'components/admin/nfts/page/Auction';
-import Description from 'components/admin/nfts/page/Description';
-import TableLastOffer from 'components/admin/nfts/page/TableLastOffer';
+import Auction from 'components/nfts//page/Auction';
+import Description from 'components/nfts//page/Description';
+import TableLastOffer from 'components/nfts//page/TableLastOffer';
 import tableDataLastOffer from 'variables/nfts/page/tableDataLastOffer';
 import NftCard from 'components/card/NftCard';
-import Banner from 'components/admin/nfts/page/Banner';
+import Banner from 'components/nfts//page/Banner';
 
 //assets
 import NftLarge1 from '/public/img/nfts/NftLarge1.png';

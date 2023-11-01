@@ -1,7 +1,7 @@
 'use client';
 import NftCard from 'components/card/NftCard';
-import Banner from 'components/admin/nfts/collection/Banner';
-import Search from 'components/admin/nfts/collection/Search';
+import Banner from 'components/nfts/collection/Banner';
+import Search from 'components/nfts/collection/Search';
 import Nft2 from '/public/img/nfts/Nft2.png';
 import Nft4 from '/public/img/nfts/Nft4.png';
 import Nft5 from '/public/img/nfts/Nft5.png';
