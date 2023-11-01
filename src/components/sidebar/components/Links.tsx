@@ -241,7 +241,7 @@ export function SidebarLinks(props: { routes: IRoute[]; [x: string]: any }) {
                     <div className="bg-brand-500 absolute right-0 top-px h-9 w-1 rounded-lg" />
                   ) : null}
                 </div>
-                <div className="w-full, mb-0 flex items-center justify-between pl-4">
+                {/* <div className="w-full, mb-0 flex items-center justify-between pl-4">
                   <div>
                     <div>
                       <div
@@ -268,7 +268,7 @@ export function SidebarLinks(props: { routes: IRoute[]; [x: string]: any }) {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) : (
               <div
